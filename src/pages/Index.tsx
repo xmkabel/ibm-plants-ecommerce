@@ -7,7 +7,12 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="flex-1 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/placeholder.svg')" }}>
+      <div 
+        className="flex-1 bg-cover bg-center" 
+        style={{ 
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg')" 
+        }}
+      >
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-lg bg-black/30 text-white p-8 backdrop-blur-sm">
             <h1 className="text-4xl font-bold mb-4">Welcome To<br />Paradise Nursery</h1>
