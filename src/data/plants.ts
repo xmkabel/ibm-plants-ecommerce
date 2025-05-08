@@ -1,0 +1,108 @@
+
+import { PlantItem, Category } from '../types';
+
+export const categories: Category[] = [
+  { id: 'indoor', name: 'Indoor Plants' },
+  { id: 'succulent', name: 'Succulents' },
+  { id: 'tropical', name: 'Tropical Plants' },
+  { id: 'flowering', name: 'Flowering Plants' },
+];
+
+export const plantData: PlantItem[] = [
+  {
+    id: '1',
+    name: 'Monstera Deliciosa',
+    price: 29.99,
+    description: 'Popular indoor plant with iconic split leaves.',
+    image: '/src/assets/monstera.jpg',
+    category: 'indoor',
+  },
+  {
+    id: '2',
+    name: 'Snake Plant',
+    price: 19.99,
+    description: 'Low-maintenance plant that purifies air.',
+    image: '/src/assets/snake-plant.jpg',
+    category: 'indoor',
+  },
+  {
+    id: '3',
+    name: 'Fiddle Leaf Fig',
+    price: 39.99,
+    description: 'Trendy plant with large, violin-shaped leaves.',
+    image: '/src/assets/fiddle-leaf.jpg',
+    category: 'indoor',
+  },
+  {
+    id: '4',
+    name: 'Aloe Vera',
+    price: 14.99,
+    description: 'Medicinal plant with fleshy leaves.',
+    image: '/src/assets/aloe.jpg',
+    category: 'succulent',
+  },
+  {
+    id: '5',
+    name: 'Echeveria',
+    price: 9.99,
+    description: 'Rosette-forming succulent with colorful leaves.',
+    image: '/src/assets/echeveria.jpg',
+    category: 'succulent',
+  },
+  {
+    id: '6',
+    name: 'Jade Plant',
+    price: 15.99,
+    description: 'Symbol of good luck and prosperity.',
+    image: '/src/assets/jade.jpg',
+    category: 'succulent',
+  },
+  {
+    id: '7',
+    name: 'Bird of Paradise',
+    price: 45.99,
+    description: 'Dramatic plant with banana-like leaves.',
+    image: '/src/assets/bird-of-paradise.jpg',
+    category: 'tropical',
+  },
+  {
+    id: '8',
+    name: 'Majesty Palm',
+    price: 34.99,
+    description: 'Elegant palm that adds tropical vibes.',
+    image: '/src/assets/majesty-palm.jpg',
+    category: 'tropical',
+  },
+  {
+    id: '9',
+    name: 'Orchid',
+    price: 24.99,
+    description: 'Exotic blooms that last for months.',
+    image: '/src/assets/orchid.jpg',
+    category: 'flowering',
+  },
+  {
+    id: '10',
+    name: 'Peace Lily',
+    price: 22.99,
+    description: 'Air-purifying plant with white blooms.',
+    image: '/src/assets/peace-lily.jpg',
+    category: 'flowering',
+  },
+  {
+    id: '11',
+    name: 'Pothos',
+    price: 16.99,
+    description: 'Easy-growing vine with heart-shaped leaves.',
+    image: '/src/assets/pothos.jpg',
+    category: 'indoor',
+  },
+  {
+    id: '12',
+    name: 'ZZ Plant',
+    price: 25.99,
+    description: 'Nearly indestructible plant with glossy leaves.',
+    image: '/src/assets/zz-plant.jpg',
+    category: 'indoor',
+  },
+];
