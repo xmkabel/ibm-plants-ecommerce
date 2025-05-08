@@ -1,73 +1,94 @@
-# Welcome to your Lovable project
 
-## Project info
+# Paradise Nursery - Plant Shop
 
-**URL**: https://lovable.dev/projects/d0b0c052-f065-4d1a-8a97-b5032f3aaab1
+![Paradise Nursery](https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg)
 
-## How can I edit this code?
+A modern e-commerce web application for a plant nursery, offering a variety of indoor and outdoor plants.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- 🪴 Browse a curated collection of plants
+- 🔎 Filter plants by category
+- 🛒 Add plants to cart
+- 📱 Responsive design for all devices
+- 💳 Simple checkout process
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d0b0c052-f065-4d1a-8a97-b5032f3aaab1) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React** - Frontend library
+- **Redux Toolkit** - State management
+- **React Router** - Navigation
+- **Tailwind CSS** - Styling
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **shadcn/ui** - UI components
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v16 or later)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository
+```bash
+git clone <repository-url>
 ```
 
-**Edit a file directly in GitHub**
+2. Navigate to the project directory
+```bash
+cd paradise-nursery
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-**Use GitHub Codespaces**
+4. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+5. Open your browser and visit `http://localhost:5173`
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```
+src/
+├── components/   # Reusable UI components
+├── data/         # Mock data for plants
+├── pages/        # Main application pages
+├── store/        # Redux store and slices
+├── types/        # TypeScript type definitions
+└── utils/        # Utility functions
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Available Scripts
 
-## How can I deploy this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
 
-Simply open [Lovable](https://lovable.dev/projects/d0b0c052-f065-4d1a-8a97-b5032f3aaab1) and click on Share -> Publish.
+## Future Enhancements
 
-## Can I connect a custom domain to my Lovable project?
+- User authentication
+- Wishlists
+- Plant care guides
+- Order history
+- Search functionality
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Acknowledgments
+
+- Plant images courtesy of [Pexels](https://www.pexels.com/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
