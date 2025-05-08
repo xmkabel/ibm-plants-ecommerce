@@ -1,5 +1,6 @@
 
 import { PlantItem, Category } from '../types';
+import { pexelsPlantImages } from '../utils/pexelsImages';
 
 export const categories: Category[] = [
   { id: 'indoor', name: 'Indoor Plants' },
@@ -14,7 +15,7 @@ export const plantData: PlantItem[] = [
     name: 'Monstera Deliciosa',
     price: 29.99,
     description: 'Popular indoor plant with iconic split leaves.',
-    image: '/src/assets/monstera.jpg',
+    image: pexelsPlantImages['Monstera Deliciosa'],
     category: 'indoor',
   },
   {
@@ -22,7 +23,7 @@ export const plantData: PlantItem[] = [
     name: 'Snake Plant',
     price: 19.99,
     description: 'Low-maintenance plant that purifies air.',
-    image: '/src/assets/snake-plant.jpg',
+    image: pexelsPlantImages['Snake Plant'],
     category: 'indoor',
   },
   {
@@ -30,7 +31,7 @@ export const plantData: PlantItem[] = [
     name: 'Fiddle Leaf Fig',
     price: 39.99,
     description: 'Trendy plant with large, violin-shaped leaves.',
-    image: '/src/assets/fiddle-leaf.jpg',
+    image: pexelsPlantImages['Fiddle Leaf Fig'],
     category: 'indoor',
   },
   {
@@ -38,7 +39,7 @@ export const plantData: PlantItem[] = [
     name: 'Aloe Vera',
     price: 14.99,
     description: 'Medicinal plant with fleshy leaves.',
-    image: '/src/assets/aloe.jpg',
+    image: pexelsPlantImages['Aloe Vera'],
     category: 'succulent',
   },
   {
@@ -46,7 +47,7 @@ export const plantData: PlantItem[] = [
     name: 'Echeveria',
     price: 9.99,
     description: 'Rosette-forming succulent with colorful leaves.',
-    image: '/src/assets/echeveria.jpg',
+    image: pexelsPlantImages['Echeveria'],
     category: 'succulent',
   },
   {
@@ -54,7 +55,7 @@ export const plantData: PlantItem[] = [
     name: 'Jade Plant',
     price: 15.99,
     description: 'Symbol of good luck and prosperity.',
-    image: '/src/assets/jade.jpg',
+    image: pexelsPlantImages['Jade Plant'],
     category: 'succulent',
   },
   {
@@ -62,7 +63,7 @@ export const plantData: PlantItem[] = [
     name: 'Bird of Paradise',
     price: 45.99,
     description: 'Dramatic plant with banana-like leaves.',
-    image: '/src/assets/bird-of-paradise.jpg',
+    image: pexelsPlantImages['Bird of Paradise'],
     category: 'tropical',
   },
   {
@@ -70,7 +71,7 @@ export const plantData: PlantItem[] = [
     name: 'Majesty Palm',
     price: 34.99,
     description: 'Elegant palm that adds tropical vibes.',
-    image: '/src/assets/majesty-palm.jpg',
+    image: pexelsPlantImages['Majesty Palm'],
     category: 'tropical',
   },
   {
@@ -78,7 +79,7 @@ export const plantData: PlantItem[] = [
     name: 'Orchid',
     price: 24.99,
     description: 'Exotic blooms that last for months.',
-    image: '/src/assets/orchid.jpg',
+    image: pexelsPlantImages['Orchid'],
     category: 'flowering',
   },
   {
@@ -86,7 +87,7 @@ export const plantData: PlantItem[] = [
     name: 'Peace Lily',
     price: 22.99,
     description: 'Air-purifying plant with white blooms.',
-    image: '/src/assets/peace-lily.jpg',
+    image: pexelsPlantImages['Peace Lily'],
     category: 'flowering',
   },
   {
@@ -94,7 +95,7 @@ export const plantData: PlantItem[] = [
     name: 'Pothos',
     price: 16.99,
     description: 'Easy-growing vine with heart-shaped leaves.',
-    image: '/src/assets/pothos.jpg',
+    image: pexelsPlantImages['Pothos'],
     category: 'indoor',
   },
   {
@@ -102,7 +103,7 @@ export const plantData: PlantItem[] = [
     name: 'ZZ Plant',
     price: 25.99,
     description: 'Nearly indestructible plant with glossy leaves.',
-    image: '/src/assets/zz-plant.jpg',
+    image: pexelsPlantImages['ZZ Plant'],
     category: 'indoor',
   },
 ];
