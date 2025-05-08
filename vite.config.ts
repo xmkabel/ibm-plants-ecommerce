@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/ibm-plants-ecommerce/", // Updated base path to match GitHub repository name
+  base: "/ibm-plants-ecommerce/", // GitHub repository name
 }));
