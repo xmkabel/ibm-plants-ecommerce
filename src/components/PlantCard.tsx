@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { PlantItem } from '../types';
 import { addToCart } from '../store/cartSlice';
 import { RootState } from '../store';
+import { Badge } from "@/components/ui/badge";
 
 interface PlantCardProps {
   plant: PlantItem;
@@ -19,28 +20,28 @@ const PlantCard = ({ plant }: PlantCardProps) => {
   };
 
   return (
-    <div className="col">
-      <div className="card h-100 shadow-sm card-hover">
-        <div className="position-relative" style={{ height: '180px', overflow: 'hidden' }}>
-          <img
-            src={plant.image}
-            className="card-img-top"
-            alt={plant.name}
-            style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-          />
-        </div>
-        <div className="card-body d-flex flex-column">
-          <div className="d-flex justify-content-between align-items-start mb-2">
-            <h5 className="card-title mb-0">{plant.name}</h5>
-            <span className="badge bg-success rounded-pill">${plant.price.toFixed(2)}</span>
-          </div>
-          <p className="card-text text-muted mb-3 small">{plant.description}</p>
+    <div className="bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+      <div className="relative">
+        <img
+          src={plant.image}
+          alt={plant.name}
+          className="w-full h-48 object-cover"
+        />
+        <Badge className="absolute top-2 right-2 bg-red-500">Sale</Badge>
+      </div>
+      <div className="p-4">
+        <h3 className="font-bold text-lg mb-1">{plant.name}</h3>
+        <p className="text-gray-600 text-sm mb-3 line-clamp-2">{plant.description}</p>
+        <div className="flex items-center justify-between">
+          <span className="font-bold text-green-700">${plant.price.toFixed(2)}</span>
           <button
-            className="btn btn-plant mt-auto"
             onClick={handleAddToCart}
             disabled={isInCart}
+            className={`px-3 py-1 rounded text-white ${
+              isInCart ? 'bg-gray-400' : 'bg-green-600 hover:bg-green-700'
+            }`}
           >
-            {isInCart ? 'Added to Cart' : 'Add to Cart'}
+            {isInCart ? 'Added' : 'Add to Cart'}
           </button>
         </div>
       </div>

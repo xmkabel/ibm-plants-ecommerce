@@ -5,80 +5,30 @@ import NavBar from '../components/NavBar';
 
 const Index = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="hero-section">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-8 text-center text-white">
-              <h1 className="display-2 fw-bold mb-4">Paradise Plant Palace</h1>
-              <p className="lead mb-4">
-                Bring nature indoors with our carefully curated collection of beautiful house plants.
-                Each plant is grown with love and delivered to your doorstep in perfect condition.
-              </p>
-              <Link to="/products" className="btn btn-lg btn-light px-5 py-3">
-                Shop Now
-              </Link>
-            </div>
+      <div className="flex-1 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/placeholder.svg')" }}>
+        <div className="container mx-auto px-4 py-20">
+          <div className="max-w-lg bg-black/30 text-white p-8 backdrop-blur-sm">
+            <h1 className="text-4xl font-bold mb-4">Welcome To<br />Paradise Nursery</h1>
+            <p className="mb-6">
+              At Paradise Nursery, we sell premium quality plants for your home, garden or office.
+              Each plant is grown with care and delivered in perfect condition to your doorstep.
+            </p>
+            <p className="mb-6">
+              The heart of Paradise Nursery is its passion for plants. We carefully source the healthiest plants
+              from sustainable growers and deliver them to plant lovers nationwide.
+            </p>
+            <Link 
+              to="/products" 
+              className="inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition-colors"
+            >
+              Shop Plants
+            </Link>
           </div>
         </div>
       </div>
-      
-      <div className="container my-5">
-        <div className="row">
-          <div className="col-md-6 mb-4 mb-md-0">
-            <h2 className="h3 mb-4">Our Story</h2>
-            <p>
-              Paradise Plant Palace started with a simple passion for plants. Our founder, a lifelong plant enthusiast, 
-              wanted to share the joy and benefits of living with plants with as many people as possible.
-            </p>
-            <p>
-              Today, we carefully source the healthiest plants from sustainable growers and deliver them to plant lovers 
-              nationwide. Each plant comes with care instructions to help you create the perfect environment for your 
-              green friend to thrive.
-            </p>
-          </div>
-          <div className="col-md-6">
-            <h2 className="h3 mb-4">Why Choose Us</h2>
-            <ul className="list-unstyled">
-              <li className="mb-3">
-                <div className="d-flex">
-                  <div className="bg-success rounded-circle p-2 me-3" style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <span className="text-white">1</span>
-                  </div>
-                  <div>
-                    <h5>Premium Quality Plants</h5>
-                    <p className="text-muted">We source only the healthiest, most vibrant plants.</p>
-                  </div>
-                </div>
-              </li>
-              <li className="mb-3">
-                <div className="d-flex">
-                  <div className="bg-success rounded-circle p-2 me-3" style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <span className="text-white">2</span>
-                  </div>
-                  <div>
-                    <h5>Expert Care Guidance</h5>
-                    <p className="text-muted">Every plant comes with detailed care instructions.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="d-flex">
-                  <div className="bg-success rounded-circle p-2 me-3" style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <span className="text-white">3</span>
-                  </div>
-                  <div>
-                    <h5>30-Day Guarantee</h5>
-                    <p className="text-muted">If your plant doesn't thrive, we'll replace it for free.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </>
+    </div>
   );
 };
 

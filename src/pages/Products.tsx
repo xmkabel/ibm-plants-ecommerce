@@ -10,32 +10,19 @@ const Products = () => {
   const cartItems = useSelector((state: RootState) => state.cart.items);
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <NavBar />
-      <div className="container my-5">
-        <div className="row mb-4">
-          <div className="col">
-            <h1 className="fw-bold text-center mb-1">Our Plant Collection</h1>
-            <p className="text-center text-muted mb-4">Find the perfect plant for your space</p>
-          </div>
-        </div>
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-3xl font-bold text-center mb-2">All Purifying Plants</h1>
+        <p className="text-gray-600 text-center mb-8">Find the perfect plant for your space</p>
 
-        {categories.map((category) => {
-          const categoryPlants = plantData.filter((plant) => plant.category === category.id);
-          
-          return (
-            <div key={category.id} className="mb-5">
-              <h2 className="h3 mb-4 border-bottom pb-2">{category.name}</h2>
-              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                {categoryPlants.map((plant) => (
-                  <PlantCard key={plant.id} plant={plant} />
-                ))}
-              </div>
-            </div>
-          );
-        })}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {plantData.map((plant) => (
+            <PlantCard key={plant.id} plant={plant} />
+          ))}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

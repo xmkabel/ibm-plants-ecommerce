@@ -11,9 +11,6 @@ import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 
-// Create placeholder images for our plants
-import placeholderImg from '/placeholder.svg';
-
 const queryClient = new QueryClient();
 
 const App = () => (

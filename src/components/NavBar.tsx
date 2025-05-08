@@ -9,38 +9,24 @@ const NavBar = () => {
   const totalItems = useSelector((state: RootState) => state.cart.totalItems);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div className="container">
-        <Link to="/" className="navbar-brand">
-          <span className="fw-bold text-plant-700">Paradise Plant Palace</span>
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/products" className="nav-link">Shop Plants</Link>
-            </li>
-          </ul>
-          <div className="d-flex">
-            <Link to="/cart" className="btn btn-outline-success position-relative">
-              <ShoppingCart size={20} />
+    <nav className="bg-green-600 text-white shadow-md">
+      <div className="container mx-auto px-4 py-3">
+        <div className="flex justify-between items-center">
+          <Link to="/" className="text-xl font-bold">
+            Paradise Nursery
+          </Link>
+          <div className="flex space-x-6 items-center">
+            <Link to="/" className="hover:text-green-200">
+              Home
+            </Link>
+            <Link to="/products" className="hover:text-green-200">
+              Plants
+            </Link>
+            <Link to="/cart" className="relative hover:text-green-200">
+              <ShoppingCart size={22} />
               {totalItems > 0 && (
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge">
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                   {totalItems}
-                  <span className="visually-hidden">items in cart</span>
                 </span>
               )}
             </Link>
